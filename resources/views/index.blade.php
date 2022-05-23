@@ -6,11 +6,8 @@
     <li class="nav-item">
         <a class="nav-link active" aria-current="page" href="#content">Home</a>
     </li>
-    <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#features">Features</a>
-    </li>
     <li class="nav-item me-2">
-        <a class="nav-link active" aria-current="page" href="#ketersediaan">Ketersediaan</a>
+        <a class="nav-link active" aria-current="page" href="#features">Features</a>
     </li>
 @endsection
 
@@ -28,20 +25,19 @@
             <div class="col-sm-12 col-xl-6">
                 <div class="d-flex justify-content-center">
                     <img class="img-fluid" src="{{ URL::asset('assets/images/coffee-1.png') }}" alt="gambar-kopi" style="max-width: 75%">
-                    {{-- Attribution: <a class="stretched-link" target="_blank" href='https://www.freepik.com/vectors/coffee-types'></a> --}}
                 </div>
             </div>
         </div>
     </section>
 
     <section class="container-xl min-vh-90" id="features">
-        <div class="row d-flex align-items-strech mb-4">
+        <div class="row my-4">
             <div class="text-center">
                 <h1 style="font-family: 'Lobster', cursive;">Fitur Warkop Companion</h1>
                 <p class="fs-4">Kami menyediakan jasa untuk membantu Warung Kopi Anda agar dapat segera beroperasi.</p>
             </div>
         </div>
-        <div class="row d-flex align-items-center text-center my-4">
+        <div class="row text-center my-4">
             <div class="col-sm-12 col-xl-4 mb-4">
                 <img class="img-fluid img-thumbnail p-2 mb-2" src="{{ URL::asset('assets/images/daan-evers-tKN1WXrzQ3s-unsplash.jpg') }}" alt="gambar-fitur" style="height: 250px; width: 360px; object-fit: cover;">
                 <p class="fs-5">Jasa Desain Interior</p>
@@ -65,15 +61,6 @@
             <div class="col-sm-12 col-xl-4 mb-4">
                 <img class="img-fluid img-thumbnail p-2 mb-2" src="{{ URL::asset('assets/images/drew-coffman-jUOaONoXJQk-unsplash.jpg') }}" alt="gambar-fitur" style="height: 250px; width: 360px; object-fit: cover;">
                 <p class="fs-5">Persediaan Furnitur</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="container-xl min-vh-90 border" id="ketersediaan">
-        <div class="row d-flex align-items-strech mb-4">
-            <div class="text-center">
-                <h1 style="font-family: 'Lobster', cursive;">Ketersediaan Jasa dan Barang</h1>
-                <p class="fs-4">Ketersediaan jasa dan barang didasari oleh ketersediaan tenaga kerja kami.</p>
             </div>
         </div>
     </section>

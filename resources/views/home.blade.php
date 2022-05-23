@@ -1,4 +1,6 @@
-@extends('layouts.app')
+@extends('layouts.base')
+
+@section('title', 'My Companion')
 
 @section('content')
 <div class="container">

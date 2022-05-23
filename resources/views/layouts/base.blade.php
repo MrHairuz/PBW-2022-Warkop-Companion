@@ -17,7 +17,8 @@
 <body class="bg-light">
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-xl" style="font-family: 'Comfortaa', cursive;">
-            <a class="navbar-brand fs-4" href="{{ URL('/') }}" style="font-family: 'Lobster', cursive;">Warkop Companion</a>
+            <a class="navbar-brand fs-4" href="{{ URL('/') }}" style="font-family: 'Lobster', cursive;">Warkop
+                Companion</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -26,11 +27,41 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <div class="navbar-nav me-auto mb-2 mb-lg-0"></div>
                 <ul class="navbar-nav">
-                    @yield("navbar")
+                    @yield('navbar')
+                    @guest
                     <li class="nav-item">
-                        <a class="btn btn-outline-coffee me-2" href={{ route('register') }} role="button">Daftar</a>
-                        <a class="btn btn-coffee" href={{ route('login') }} role="button">Login</a>
+                        @if (Route::has('login'))
+                            <a class="btn btn-outline-coffee me-2" href={{ route('login') }} role="button">Login</a>
+                        @endif
+
+                        @if (Route::has('register'))
+                            <a class="btn btn-coffee" href={{ route('register') }} role="button">Daftar</a>
+                        @endif
                     </li>
+                    @else
+                    <li class="nav-item dropdown">
+                        <a id="navbarDropdown" class="btn btn-coffee" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                            {{ Auth::user()->name }}
+                        </a>
+
+                        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="{{ route('home') }}">
+                                {{ __('My Companion') }}
+                            </a>
+                            <hr class="dropdown-divider">
+                            <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                {{ __('Logout') }}
+                            </a>
+
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                                class="d-none">
+                                @csrf
+                            </form>
+                        </div>
+                    </li>
+                    @endguest
                 </ul>
             </div>
         </div>
