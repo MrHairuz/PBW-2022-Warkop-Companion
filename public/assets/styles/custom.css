@@ -140,3 +140,39 @@ button.bg-coffee:focus {
 a.text-coffee:hover, a.text-coffee:focus {
     color: #432100 !important;
 }
+
+.navbar-nav > li > .dropdown-menu > .dropdown-item:active {
+    background-color: #773b00;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+  border-color: #ff8916cc;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.125) inset, 0 0 8px #773b0099;
+  outline: 0 none;
+}
+
+input:-webkit-autofill{
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}

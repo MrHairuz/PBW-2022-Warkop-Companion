@@ -7,8 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield('title') | Warkop Companion</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="{{ URL::asset('assets/styles/style.css') }}">
     <link rel="stylesheet" href="{{ URL::asset('assets/styles/custom.css') }}">
@@ -42,12 +41,15 @@
                     <li class="nav-item dropdown">
                         <a id="navbarDropdown" class="btn btn-coffee" href="#" role="button"
                             data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                            {{ Auth::user()->name }}
+                            <i class="fa fa-user me-1" aria-hidden="true"></i> {{ Auth::user()->name }}
                         </a>
 
-                        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <div class="dropdown-menu dropdown-menu-end mt-2" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="{{ route('home') }}">
                                 {{ __('My Companion') }}
+                            </a>
+                            <a class="dropdown-item" href="{{ route('pesanan') }}">
+                                {{ __('My Pesanan') }}
                             </a>
                             <hr class="dropdown-divider">
                             <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
@@ -71,7 +73,7 @@
         @yield('content')
     </main>
 
-    <footer class="container-fluid bg-coffee text-white">
+    <footer class="container-fluid bg-dark text-white">
         <div class="row d-flex justify-content-center">
             <p class="text-center" style="font-family: 'Lobster', cursive; font-size: 1em">Copyright &copy; 2022
                 Warkop Companion</p>

@@ -12,7 +12,6 @@
 @endsection
 
 @section('content')
-
     <section class="container-xl min-vh-90 vh-90" id="content">
         <div class="row d-flex align-items-center h-100">
             <div class="col-sm-12 col-xl-6">
@@ -48,7 +47,7 @@
             </div>
             <div class="col-sm-12 col-xl-4 mb-4">
                 <img class="img-fluid img-thumbnail p-2 mb-2" src="{{ URL::asset('assets/images/patrick-schneider-mFnbFaCIu1I-unsplash.jpg') }}" alt="gambar-fitur" style="height: 250px; width: 360px; object-fit: cover;">
-                <p class="fs-5">Jasa Pengaturan Pencahayaan</p>
+                <p class="fs-5">Jasa Desain Pencahayaan</p>
             </div>
             <div class="col-sm-12 col-xl-4 mb-4">
                 <img class="img-fluid img-thumbnail p-2 mb-2" src="{{ URL::asset('assets/images/yao-hu-WEr6UFkNXiA-unsplash.jpg') }}" alt="gambar-fitur" style="height: 250px; width: 360px; object-fit: cover;">
