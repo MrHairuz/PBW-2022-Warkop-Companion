@@ -26,4 +26,6 @@ Route::get('/pesanan', [App\Http\Controllers\PesananController::class, 'index'])
 
 Route::get('/pesanan/edit/{pesanan_id}', ['as' => 'pesanan.edit', 'uses' => 'App\Http\Controllers\PesananController@edit']);
 
-Route::post('/pesanan/store/{pesanan_id}', ['as' => 'pesanan.store', 'uses' => 'App\Http\Controllers\PesananController@store']);
+Route::post('/pesanan/update/', ['as' => 'pesanan.update', 'uses' => 'App\Http\Controllers\PesananController@update']);
+
+Route::post('/pesanan/store/', ['as' => 'pesanan.store', 'uses' => 'App\Http\Controllers\PesananController@store']);
