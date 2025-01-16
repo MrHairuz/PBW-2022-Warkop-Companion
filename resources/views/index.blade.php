@@ -16,14 +16,14 @@
         <div class="row d-flex align-items-center h-100">
             <div class="col-sm-12 col-xl-6">
                 <div style="font-family: 'Lobster', cursive;">
-                    <h1 style="font-size: 4em">Hello!</h1>
-                    <h3 style="font-size: 3em">We're your <span class="text-coffee">Warkop Companion!</span></h3>
-                    <h3 class="mb-4" style="font-size: 2em">Ready To Help Your Warung Kopi To Perfection!</h3>
+                    <h1 style="font-size: 4em">Welcome!</h1>
+                    <h3 style="font-size: 3em">We are <span class="text-coffee">RupaRaya Cafe~</span></h3>
+                    <h3 class="mb-4" style="font-size: 2em">Ready To Help Your Inspiration To Perfection!</h3>
                 </div>
             </div>
             <div class="col-sm-12 col-xl-6">
                 <div class="d-flex justify-content-center">
-                    <img class="img-fluid" src="{{ URL::asset('assets/images/coffee-1.png') }}" alt="gambar-kopi" style="max-width: 75%">
+                    <img class="img-fluid" src="{{ URL::asset('assets/images/image.png') }}" alt="gambar-kopi" style="max-width: 75%">
                 </div>
             </div>
         </div>

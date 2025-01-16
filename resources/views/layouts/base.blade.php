@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>@yield('title') | Warkop Companion</title>
+    <title>@yield('title') | RupaRaya Cafe~</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -16,8 +16,8 @@
 <body class="bg-light">
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-xl" style="font-family: 'Comfortaa', cursive;">
-            <a class="navbar-brand fs-4" href="{{ URL('/') }}" style="font-family: 'Lobster', cursive;">Warkop
-                Companion</a>
+            <a class="navbar-brand fs-4" href="{{ URL('/') }}" style="font-family: 'Lobster', cursive;">RupaRaya
+                Cafe~</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
